@@ -14,7 +14,7 @@ import re
 from random import uniform
 from collections import defaultdict
 
-r_alphabet = re.compile(u'[а-яА-Я0-9-]+|[:;?!]+')
+r_alphabet = re.compile(u'[а-яА-Я0-9-]+|[.,:;?!]+')
 
 with open('marked.txt', 'r') as f:
 	text=f.read()
