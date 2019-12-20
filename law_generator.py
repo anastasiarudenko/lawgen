@@ -82,4 +82,3 @@ def unirand(seq):
             return token
 
 model = train('marked.txt')
-print(generate_sentence(model))
