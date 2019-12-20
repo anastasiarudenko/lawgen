@@ -7,19 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1AZTA7A-syFhC9AH9LCpSzoMrV1A6sA1z
 """
 
-# Commented out IPython magic to ensure Python compatibility.
-import sys, json, codecs, csv
-import numpy as np
-import random
-import pandas as pd
-import tqdm
-import itertools
-import seaborn as sns
-
-# visualization
-import matplotlib
-import numpy as np
-import matplotlib.pyplot as plt
 # %matplotlib inline
 
 import re
@@ -31,15 +18,6 @@ r_alphabet = re.compile(u'[а-яА-Я0-9-]+|[.,:;?!]+')
 
 with open('marked.txt', 'r') as f:
 	text=f.read()
-
-import re
-from random import uniform
-from collections import defaultdict
-
-r_alphabet = re.compile(u'[а-яА-Я0-9-]+|[.,:;?!]+')
-
-with open('marked.txt', 'r') as f:
-    text=f.read()
 
 def gen_lines(corpus):
     data = open(corpus)
