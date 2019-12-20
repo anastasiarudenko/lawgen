@@ -60,9 +60,11 @@ def train(corpus):
     return model
 
 def generate_sentence(model):
+    limit = 50
     phrase = ''
     t0, t1 = '$', '$'
-    while 1:
+    while (limit > 0):
+        limit = limit - 1
         t0, t1 = t1, unirand(model[t0, t1])
         if t1 == '$': break
         if t1 in ('.!?,;:') or t0 == '$':
