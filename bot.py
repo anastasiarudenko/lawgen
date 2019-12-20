@@ -10,7 +10,7 @@ keyboard1.row('/gen', '/info')
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    msg = bot.send_message(message.chat.id, 'Добро пожаловать, ' + str(message.chat.first_name) + '\n\nЭто бот для генерации законов РФ\n(не настоящих)\n\nВ качестве основы были использованы:\n✓ Конституция\n✓ Уголовный кодекс\n✓ Семейный кодекс\n✓ Закон о СМИ\n✓ Федеральный закон о рекламе\n✓ Закон об оружии\n✓ Лесной кодекс\n✓ Закон о полиции\n✓ Федеральный закон о нацгвардии')
+    msg = bot.send_message(message.chat.id, 'Добро пожаловать, ' + str(message.chat.first_name) + '\n\nЭто бот для генерации законов РФ\n(не настоящих)\n\nВ качестве основы были использованы:\n✓ Конституция\n✓ Уголовный кодекс\n✓ Семейный кодекс\n✓ Закон о СМИ\n✓ Федеральный закон о рекламе\n✓ Закон об оружии\n✓ Лесной кодекс\n✓ Закон о полиции\n✓ Федеральный закон о нацгвардии', reply_markup=keyboard1)
 
 @bot.message_handler(commands=['gen'])
 def send_welcome(message):
